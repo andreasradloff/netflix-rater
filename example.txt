@@ -1,0 +1,72 @@
+[{
+    "Titel":"Broken Flowers",
+    "Orginaltitel":"Broken Flowers",
+    "År":2005,
+    "Regissör":"Jim Jarmusch",
+    "Ditt betyg":4,
+    "Datum":"2013-03-22 22:17:55",
+    "IMDB#":412019
+  },
+    {
+    "Titel":"Highlander 2",
+    "Orginaltitel":"Highlander II: The Quickening",
+    "År":1990,
+    "Regissör":"Russell Mulcahy",
+    "Ditt betyg":1,
+    "Datum":"2004-01-25 21:06:20",
+    "IMDB#":102034
+  },
+  {
+    "Titel":"Höken är lös",
+    "Orginaltitel":"Hudson Hawk",
+    "År":1991,
+    "Regissör":"Michael Lehmann",
+    "Ditt betyg":2,
+    "Datum":"2004-01-25 21:04:59",
+    "IMDB#":102070
+  },
+  {
+    "Titel":"Man on the Moon",
+    "Orginaltitel":"Man on the Moon",
+    "År":1999,
+    "Regissör":"Milos Forman",
+    "Ditt betyg":4,
+    "Datum":"2004-01-25 20:32:43",
+    "IMDB#":125664
+  },
+  {
+    "Titel":"Yojimbo - livvakten",
+    "Orginaltitel":"Yojimbo",
+    "År":1961,
+    "Regissör":"Akira Kurosawa",
+    "Ditt betyg":4,
+    "Datum":"2004-01-25 20:00:54",
+    "IMDB#":55630
+  },
+  {
+    "Titel":"Avalon",
+    "Orginaltitel":"Avalon",
+    "År":2001,
+    "Regissör":"Mamoru Oshii",
+    "Ditt betyg":2,
+    "Datum":"2004-01-24 11:30:27",
+    "IMDB#":267287
+  },
+  {
+    "Titel":"Interstella 5555",
+    "Orginaltitel":"Interstella 5555: The 5tory of the 5ecret 5tar 5ystem",
+    "År":2003,
+    "Regissör":"Leiji Matsumoto, Kazuhisa Takenôchi",
+    "Ditt betyg":3,
+    "Datum":"2004-01-24 10:15:09",
+    "IMDB#":368667
+  },
+  {
+    "Titel":"Forrest Gump",
+    "Orginaltitel":"Forrest Gump",
+    "År":1994,
+    "Regissör":"Robert Zemeckis",
+    "Ditt betyg":4,
+    "Datum":"2004-01-22 15:35:49",
+    "IMDB#":109830
+  }]

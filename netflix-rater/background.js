@@ -6,7 +6,7 @@ xhr.onreadystatechange = function() {
 		ratings = JSON.parse(xhr.responseText);
 	}
 }
-xhr.open("GET", chrome.extension.getURL('/betyg.json'), true);
+xhr.open("GET", chrome.extension.getURL('/betyg.txt'), true);
 xhr.send();
 
 // This is what does the work for a given movie

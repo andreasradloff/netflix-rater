@@ -13,7 +13,7 @@ Usage
 This was a one-off project, so there's no real interface. This assumes you have a bunch of movie ratings in the JSON format described below.
 
 1. Download the extension code in the netflix-rater subdirectory
-2. Drop your input into that subdirectory as a file called `netflix.json`
+2. Drop your input into that subdirectory as a file called `betyg.txt`
 3. In Chrome, go to Tools > Extensions or chrome://extensions and enable Developer Mode if you haven't already
 4. Click "Load unpacked extension..." and select the netflix-rater subdirectory
 5. Log into Netflix and make sure the **correct** profile is selected under your account
@@ -30,4 +30,4 @@ You then need to convert the excel-file from filmtipset to json. Save or export 
 
 The input is a simple JSON list of objects, with each object containing at least a `"url"` key containing a string URL that points to a movie on Netflix and a `"rating"` key containing an integer rating from 0 to 5, inclusive. 0 indicates "Not Interested".
 
-An example input file is checked in under `example.json`.
+An example input file is checked in under `example.txt`.
