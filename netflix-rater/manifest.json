@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 
-	"name": "Netflix Rater",
+	"name": "Netflix Rater for Filmtipset",
 	"description": "Bulk sets some Netflix ratings from a JSON input",
 	"version": "1.0",
 

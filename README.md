@@ -1,6 +1,8 @@
 netflix-rater
 =============
 
+This is a fork of https://github.com/UltraNurd/netflix-rater modified to take a json file with ratings from filmtipset.se.
+
 Very simple Chrome extension that "imports" a large number of movie ratings into a Netflix profile by automatically clicking on stars.
 
 **It is not my fault if you somehow destroy your Netflix account.**
@@ -23,6 +25,9 @@ The extension submits one rating every five seconds to avoid getting kicked out 
 Input
 -----
 
+Go here and click on "Exportera denna lista": http://nyheter24.se/filmtipset/yourpage.cgi
+You then need to convert the excel-file from filmtipset to json. Save or export the excel-file to .csv (Kommaseparerade värden) and then use this tool to convert it to json: http://www.convertcsv.com/csv-to-json.htm
+
 The input is a simple JSON list of objects, with each object containing at least a `"url"` key containing a string URL that points to a movie on Netflix and a `"rating"` key containing an integer rating from 0 to 5, inclusive. 0 indicates "Not Interested".
 
-An example input file is checked in under `example.json`. This input format was the output from [this GreaseMonkey export script](http://userscripts.org/scripts/show/138133) on my old Netflix account.
+An example input file is checked in under `example.json`.
