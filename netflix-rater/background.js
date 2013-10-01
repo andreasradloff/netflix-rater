@@ -6,7 +6,7 @@ xhr.onreadystatechange = function() {
 		ratings = JSON.parse(xhr.responseText);
 	}
 }
-xhr.open("GET", chrome.extension.getURL('/netflix.json'), true);
+xhr.open("GET", chrome.extension.getURL('/betyg.json'), true);
 xhr.send();
 
 // This is what does the work for a given movie
@@ -31,10 +31,34 @@ function rate(movie) {
 	});
 }
 
+function imdbToNetflix(movie) {
+	//Filmtipset removes the "tt" and padding zeroes from imdb id, add it back
+	var imdbID = "tt" + ("0000000"+movie['IMDB#']).slice(-7);
+	var freebaseUrl = "https://www.googleapis.com/freebase/v1/mqlread/?lang=%2Flang%2Fen&query=[{+%22name%22%3A+null%2C+%22imdb_id%22%3A+%22" + imdbID + "%22%2C+%22netflix_id%22%3A+null%2C+%22type%22%3A+%22%2Ffilm%2Ffilm%22+}]";
+	var response;
+	console.log(freebaseUrl);
+	var xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function() {
+		if (xhr.readyState == 4) {
+			response = JSON.parse(xhr.responseText);
+			if (response.result[0].netflix_id) {
+				movie.rating = movie['Ditt betyg'];
+				movie.url = "http://movies.netflix.com/WiMovie/" + response.result[0].netflix_id;
+				rate(ratings.shift());
+			} else {
+				imdbToNetflix(ratings.shift());
+			}
+			console.log(response);
+		}
+	}
+	xhr.open("GET", chrome.extension.getURL('/betyg.json'), true);
+	xhr.send();
+}
+
 // The action starts when the extension is clicked
 var intervalId;
 chrome.browserAction.onClicked.addListener(function() {
 	// Try to rate each movie every 5 seconds
 	clearInterval(intervalId);
-	intervalId = setInterval(function() { rate(ratings.shift())}, 5000);
+	intervalId = setInterval(function() { imdbToNetflix(ratings.shift())}, 5000);
 });
