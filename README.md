@@ -1,5 +1,5 @@
-netflix-rater
-=============
+netflix-rater for Filmtipset
+============================
 
 This is a fork of https://github.com/UltraNurd/netflix-rater modified to take a json file with ratings from filmtipset.se.
 
@@ -26,7 +26,7 @@ Input
 -----
 
 Go here and click on "Exportera denna lista": http://nyheter24.se/filmtipset/yourpage.cgi
-You then need to convert the excel-file from filmtipset to json. Save or export the excel-file to .csv (Kommaseparerade värden) and then use this tool to convert it to json: http://www.convertcsv.com/csv-to-json.htm
+You then need to convert the excel-file from filmtipset to json. Save or export the excel-file to .csv (Kommaseparerade värden) from your favorite spreadsheet program and then use this tool to convert it to json: http://www.convertcsv.com/csv-to-json.htm
 
 The input is a simple JSON list of objects, with each object containing at least a `"url"` key containing a string URL that points to a movie on Netflix and a `"rating"` key containing an integer rating from 0 to 5, inclusive. 0 indicates "Not Interested".
 
