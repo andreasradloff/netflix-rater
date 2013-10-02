@@ -10,7 +10,8 @@
 	},
 
 	"permissions": [
-		"http://*.netflix.com/"
+		"http://*.netflix.com/",
+		"https://www.googleapis.com/freebase/v1/mqlread/"
 	],
 
 	"background": {
