@@ -67,5 +67,5 @@ chrome.browserAction.onClicked.addListener(function() {
 	// Try to rate each movie every 5 seconds
 	console.log("Start rating");
 	clearInterval(intervalId);
-	intervalId = setInterval(function() { imdbToNetflix(ratings.shift())}, 5000);
+	intervalId = setInterval(function() { imdbToNetflix(ratings.shift())}, 10000);
 });
