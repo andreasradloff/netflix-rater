@@ -27,7 +27,7 @@ function rate(movie) {
 			//console.log("Removing " + tabId);
 			chrome.tabs.remove(tabId);
 		}
-		chrome.tabs.executeScript(tab.id, {"code": "var star = document.getElementsByClassName('" + starClass + "')[0]; if (typeof star != 'undefined') {()star.click();console.log('Rated "+movie['Orginaltitel']+"');}"});
+		chrome.tabs.executeScript(tab.id, {"code": "var star = document.getElementsByClassName('" + starClass + "')[0]; if (typeof star != 'undefined') {star.click();console.log('Rated "+movie['Orginaltitel']+"');}"});
 	});
 }
 
