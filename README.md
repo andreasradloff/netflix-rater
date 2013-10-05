@@ -12,7 +12,7 @@ Usage
 
 This was a one-off project, so there's no real interface. This assumes you have a bunch of movie ratings in the JSON format described below.
 
-1. Download the extension code in the netflix-rater subdirectory
+1. Download the extension code in the netflix-rater subdirectory (https://github.com/andreasradloff/netflix-rater/archive/master.zip)
 2. Drop your input into that subdirectory as a file called `betyg.txt`
 3. In Chrome, go to Tools > Extensions or chrome://extensions and enable Developer Mode if you haven't already
 4. Click "Load unpacked extension..." and select the netflix-rater subdirectory
